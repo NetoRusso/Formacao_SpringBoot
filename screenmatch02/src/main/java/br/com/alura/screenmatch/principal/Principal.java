@@ -6,13 +6,11 @@ import br.com.alura.screenmatch.model.Serie;
 import br.com.alura.screenmatch.repository.SerieRepository;
 import br.com.alura.screenmatch.service.ConsumoApi;
 import br.com.alura.screenmatch.service.ConverteDados;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 
 public class Principal {
@@ -21,7 +19,6 @@ public class Principal {
     private ConsumoApi consumo = new ConsumoApi();
     private ConverteDados conversor = new ConverteDados();
     private final String ENDERECO = "http://www.omdbapi.com/?t=";
-//    private final String API_KEY = "&apikey=b5cc8c99";
     private final String OMDb_KEY = System.getenv("OMDB_KEY");
     private final String API_KEY = "&apikey=" + OMDb_KEY;
     private List<DadosSerie> dadosSeries = new ArrayList<>();
