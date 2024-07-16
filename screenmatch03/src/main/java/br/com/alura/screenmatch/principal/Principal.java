@@ -17,7 +17,6 @@ public class Principal {
     private final String ENDERECO = "http://www.omdbapi.com/?t=";
     private final String OMDb_KEY = System.getenv("OMDB_KEY");
     private final String API_KEY = "&apikey=" + OMDb_KEY;
-    private List<DadosSerie> dadosSeries = new ArrayList<>();
     private SerieRepository repositorio;
 
     public Principal(SerieRepository repositorio) {
